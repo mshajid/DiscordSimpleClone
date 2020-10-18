@@ -42,7 +42,7 @@
     align-items: center;
 }
 
-.sidebar__voice {
+.sidebar__voice, .sidebar__profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,4 +59,30 @@
 
 .sidebar__voiceIcon {
     color: #4fb185;
+}
+
+.sidebar__voiceInfo > h3 {
+    color: #4fb185;
+}
+
+.sidebar__voiceInfo > p {
+    font-size: smaller;
+}
+
+.sidebar__voiceIcons > .MuiSvgIcon-root {
+    padding: 10px;
+}
+
+.sidebar__profileInfo {
+    flex: 1;
+    padding: 10px;
+
+}
+
+.sidebar__profileInfo > h3 {
+    color: white;
+}
+
+.sidebar__profileIcons > .MuiSvgIcon-root {
+    padding: 10px;
 }

@@ -6,6 +6,11 @@ import SidebarChannel from './SidebarChannel';
 import SignalCellularAltIcon from '@material-ui/icons/SignalCellularAlt';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 import CallIcon from '@material-ui/icons/Call';
+import { Avatar } from '@material-ui/core';
+import MicIcon from '@material-ui/icons/Mic';
+import SettingsIcon from '@material-ui/icons/Settings';
+import HeadsetIcon from '@material-ui/icons/Headset';
+
 
 
 function Sidebar() {
@@ -48,8 +53,22 @@ function Sidebar() {
                 <CallIcon />
             </div>
             </div>
+
+            <div className="sidebar__profile">
+                <Avatar src="https://qph.fs.quoracdn.net/main-thumb-1111663697-200-abjkvxxbkdkieseqgiomoqzjsiusletr.jpeg" />
+                <div className="sidebar__profileInfo">
+                    <h3>Shajid Shafee</h3>
+                    <p>#Shiroe_Kai</p>
+                </div>
+
+                <div className="sidebar__profileIcons">
+                    <MicIcon />
+                    <HeadsetIcon />
+                    <SettingsIcon />
+                </div>
+            </div>
         </div>
-    )
+    );
 }
 
 export default Sidebar
